@@ -2,6 +2,7 @@
 
 ## users テーブル
 
+
 | Column               | Type   | Options      |
 | -------------------- | ------ | ------------ |
 | email                | string | null: false  |
