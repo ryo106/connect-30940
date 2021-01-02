@@ -20,6 +20,7 @@
   font-size: 16px;
   color: #FAFAFA;
   text-decoration: none;
+  margin-right: 30px;
 }
 
 .create-room {
@@ -84,27 +85,27 @@
   padding: 46px 40px 0;
 }
 
-/* .form {
+.form-me {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
   display: flex;
 }
 
-.form-input {
+.form-input-me {
   background-color: white;
   width: 100%;
   display: flex;
 }
 
-.form-message {
+.form-message-me {
   border: none;
   height: 50px;
   width: 100%;
   padding-left: 10px;
 }
 
-.form-submit {
+.form-submit-me {
   background-color: #38AEF0;
   border: none;
   color: white;
@@ -114,7 +115,7 @@
   padding: 0 20px;
 }
 
-.form-image {
+.form-image-me {
   font-size: 12px;
   background-color: lightblue;
   color: white;
@@ -122,7 +123,7 @@
   width: 60px;
   margin: 5px 10px;
   text-align: center;
-} */
+}
 
 .hidden {
   display: none;
