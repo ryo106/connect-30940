@@ -1,3 +1,9 @@
+<div class="items-sell-contents">
+  <header class="items-sell-header">
+    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+  </header>
+</div>
+
 <div class='chat-room-form'>
   <h1>新規チャットルーム</h1>
   <%=form_with model: @room, local: true do |f|%>
@@ -33,3 +39,11 @@
     </div>
   <% end %>
 </div>
+
+
+
+<%= link_to('items/new', class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>出品する</span>
+  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+

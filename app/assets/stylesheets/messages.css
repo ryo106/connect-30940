@@ -31,6 +31,7 @@
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
+  font-size: larger;
 }
 
 .rooms {
@@ -59,6 +60,7 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  background-color: #dddddd;
 }
 
 .header-title {
@@ -73,9 +75,9 @@
 
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  color:white;
   padding: 20px;
+  background-color: #38AEF0;
 }
 
 .messages {
