@@ -11,6 +11,9 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  
+  mount_uploader :image, ImageUploader
+
   with_options on: :create do
     with_options presence: true do
       validates :nickname 
