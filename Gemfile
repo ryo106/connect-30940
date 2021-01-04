@@ -74,3 +74,5 @@ gem 'active_hash'
 
 gem 'payjp'
 
+gem 'carrierwave'
+

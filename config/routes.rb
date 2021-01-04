@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   resources :prototypes, only: [:new, :create, :index, :show, :edit, :update, :destroy] do
     resources :comments, only: [:create, :index]
   end
+  resources :users, only: [:index, :edit, :update, :show]
 end
