@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'mains/index'
-  devise_for :users
+  devise_for :users, controllers: {registrations: 'users/registrations' }
   
   root to: "mains#index"
   resources :items do

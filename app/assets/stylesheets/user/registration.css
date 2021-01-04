@@ -42,6 +42,10 @@
   padding-top: 20px;
 }
 
+.form-groupimage {
+  text-align: center;
+}
+
 .form-group:first-child {
   padding: 0;
 }
