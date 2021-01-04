@@ -12,11 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
-  # def show
-  #   user = User.find(params[:id])
-  #   @nickname = user.nickname
-  #   @tweets = user.tweets
-  #   end
+  def show
+    @user = User.find(params[:id])
+    @prototype = @user.prototypes
+  end
 
   # private
 

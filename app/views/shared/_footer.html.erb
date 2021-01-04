@@ -18,7 +18,7 @@
     <div class='furima-details'>
       <h2 class='footer-content-head'>FURIMAについて</h2>
       <ul>
-        <li><%= link_to '会社概要（運営会社)', edit_user_registration_path, class: "footer-link" %></li>
+        <li><%= link_to '会社概要（運営会社)', "#", class: "footer-link" %></li>
         <li><%= link_to 'プライバシーポリシー', "#", class: "footer-link" %></li>
         <li><%= link_to 'FURIMA利用規約', "#", class: "footer-link" %></li>
         <li><%= link_to 'ポイントに関する特約', "#", class: "footer-link" %></li>
@@ -32,11 +32,13 @@
       </ul>
     </div>
     <div class='furima-details'>
-      <h2 class='footer-content-head'>FURIMAについて</h2>
+      <h2 class='footer-content-head'>connectについて</h2>
       <ul>
-        <li><%= link_to 'FURIMAガイド', "#", class: "footer-link" %></li>
-        <li><%= link_to 'FURIMAロゴ利用ガイドライン', "#", class: "footer-link" %></li>
-        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
+        <li><%= link_to '商品を購入する', items_path, class: "footer-link" %></li>
+        <li><%= link_to 'チャットを利用する', rooms_path, class: "footer-link" %></li>
+        <li><%= link_to '投稿を利用する', prototypes_path, class: "footer-link" %></li>
+        <li><%= link_to '登録情報を変更する', edit_user_registration_path, class: "footer-link" %></li>
+        
       </ul>
     </div>
   </div>
