@@ -24,19 +24,36 @@
     </ul>
   </div>
 </header>
-<main class="main">
+<div class="main2">
   <div class="inner">
-    <%# ログインしているときは以下を表示する %>
-    <% if user_signed_in? %>
-    <div class="greeting">
-      こんにちは、
-      <%= link_to "#{current_user.nickname}さん", "/users/#{current_user.id}}", class: :greeting__link %>
-    </div>
-    <%# // ログインしているときは上記を表示する %>
-    <% end %>
-    <div class="card__wrapper">
-      <%= render partial: 'prototype', collection: @prototype %> 
-      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.nickname}さんの情報"%>
+      </h2>
+      <img src=<%= @user.image %> class = "icon_image">
+      <table class="table2">
+        <tbody>
+          <tr>
+            <th class="table__col1">名前</th>
+            <td class="table__col2"><%= @user.nickname %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">趣味</th>
+            <td class="table__col2"><%= @user.hobby %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">プロフィール</th>
+            <td class="table__col2"><%= @user.profile %></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="page-heading">
+        <%= "#{@user.nickname}さんのプロトタイプ"%>
+      </h2>
+      <div class="user__card">
+        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+        <%= render partial: 'prototypes/prototype', collection: @prototype %> 
+      </div>
     </div>
   </div>
-</main>
+</div>
