@@ -9,7 +9,7 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  height: 350px;
+  height: 600px;
   background-image: image-url('clmain.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,18 +18,20 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5vh 15vw;
+  padding: 1vh 15vw 5vh 3vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .service-title {
-  font-size: 5vh;
+  font-size: 7vh;
+ 
 }
 
 .service-explain {
-  font-size: 2.5vh;
+  font-size: 6vh;
   line-height: 40px;
+  margin-left: 65px;
 }
 
 .store-btn {
@@ -52,6 +54,12 @@ a {
 .select-reason-contents {
   padding: 5vh 15vw;
 }
+.select-reason-contents-ori {
+  padding: 5vh 15vw;
+  text-align: center;
+  margin-top: 5vh;
+
+}
 
 .select-reason-contents>.title {
   text-align: center;
@@ -60,6 +68,22 @@ a {
   margin-bottom: 5vh;
   position: relative;
 }
+.title-ori1{
+text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+  border-bottom: 3px solid #3ccace;
+    display: inline-block;
+}
+.title-ori2{
+  text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1vh;
+  }
 
 .select-reason-contents>.title::after {
   content: '';
@@ -89,6 +113,10 @@ a {
 .list-pict {
   margin-bottom: 20px;
   width: 100%;
+}
+.list-pict-ori {
+  margin-bottom: 20px;
+  width: 60%;
 }
 
 .reason-list-number {
