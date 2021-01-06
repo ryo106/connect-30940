@@ -16,7 +16,54 @@
     <%# </div> %>
   </div>
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
-
+  <div class='select-reason-contents-ori'>
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= link_to image_tag "ope1.png", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'></span>
+          オペレーターに電話する
+        </h3>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag("tokou.png", class:"list-pict"), prototypes_path %>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'></span>
+          写真を投稿する
+        </h3>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag("chat1.png", class:"list-pict"), rooms_path %>
+        <h3 class='reason-list-text'>
+          チャットをする
+          <span class='reason-list-blue-text'></span>
+        </h3>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag("hon.png", class:"list-pict"), items_path %>
+        <h3 class='reason-list-text'>
+          教科書を購入する
+          <span class='reason-list-blue-text'></span>
+        </h3>
+        
+      </li>
+      <li class='list'>
+        <%= link_to image_tag("hito.png", class:"list-pict"), current_user %>
+        <h3 class='reason-list-text'>
+          プロフィールを確認する
+          <span class='reason-list-blue-text'></span>
+        </h3>
+      </li>
+      <li class='list'>
+        <%= link_to image_tag("hitohen.png", class:"list-pict"), edit_user_registration_path %>
+        <h3 class='reason-list-text'>
+          プロフィールを編集する
+          <span class='reason-list-blue-text'></span>
+        </h3>
+      </li>
+    </ul>
+  </div>
   <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents-ori'>
     <h2 class='title-ori1'>
@@ -26,113 +73,85 @@
       connectは「始めやすい、わかりやすい」を理念としたSNS学習サービスアプリです
     </h2>
     <h2 class='title-ori2'>
-      弊社サービスを通してSNSを使いこなすことで
+      弊社サービスを通して、SNSの基本を学ぶことで
     </h2>
     <h2 class='title-ori2'>
       より一層充実したセカンドライフを過ごして頂きたいと願っております
   </div>
-  <div class='select-reason-contents-ori'>
-    </h2>
-    <ul class='reason-lists'>
-      <li class='list'>
-        <%= image_tag "furima-intro01.png", class:"list-pict" %>
-        <span class='reason-list-number'>1</span>
-        <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>3分</span>
-          ですぐに出品
-        </h3>
-        <p class='reason-list-description'>
-          スマホで入力するだけで簡単に出品できる！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro02.png", class:"list-pict" %>
-        <span class='reason-list-number'>2</span>
-        <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>シンプル</span>
-          で使いやすい
-        </h3>
-        <p class='reason-list-description'>
-          めんどくさい入力は必要なく、検索も購入もスムーズ！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro03.png", class:"list-pict" %>
-        <span class='reason-list-number'>3</span>
-        <h3 class='reason-list-text'>
-          手数料
-          <span class='reason-list-blue-text'>業界最安</span>
-        </h3>
-        <p class='reason-list-description'>
-          10%でお得に出品&購入！
-        </p>
-      </li>
-    </ul>
+  
+  <div class='ad-footer-contents'>
+  <p class='ad-footer-explain'>
+    SNSをもっと身近に
+  </p>
+  <h2 class='ad-footer-title'>
+    今すぐ無料ダウンロード！
+  </h2>
+  <div class='store-btn'>
+    <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+    <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
   </div>
+  
+</div>
   <%# /FURIMAが選ばれる3つの理由部分 %>
 
   <%# 画面中央の「会員数日本一位」帯部分 %>
-  <div class='ad-contents'>
-    <h2 class='ad-title'>
-      会員数日本一位
-    </h2>
-    <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
-    </p>
-    <p class='ad-explain'>
-      出品・購入回数も業界最多です！
-    </p>
-    <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
-    </p>
-    <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
-    </div>
-  </div>
+ 
   <%# /画面中央の「会員数日本一位」帯部分 %>
 
   <%# FURIMAの特徴 %>
-  <div class='feature-contents'>
-    <h2 class='title'>
-      FURIMAの特徴
+  <div class='select-reason-contents-ori2'>
+    <h2 class='title-ori1'>
+      主な3つの特徴
     </h2>
-    <ul class='feature-lists'>
-      <li class='list'>
-        <%= image_tag "furima-intro04.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          簡単に売り買いできる
-        </h3>
-        <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro05.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
-        </h3>
-        <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro06.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          様々な支払いに対応
-        </h3>
-        <p class='feature-list-description'>
-          お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
-        </p>
-      </li>
-    </ul>
+    <h2 class='title-ori6'>
+      <%= image_tag "toku1.png", class:"ad-footer-contents-ori2" %>
+    </h2>
+    <h2 class='title-ori6'>
+      <%= image_tag "toku2.png", class:"ad-footer-contents-ori2" %>
+    </h2>
+    <h2 class='title-ori6'>
+      <%= image_tag "toku3.png", class:"ad-footer-contents-ori2" %>
+    </h2>
   </div>
+
   <%# /FURIMAの特徴 %>
 
 
 </div>
-<%= link_to('items/new', class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>出品する</span>
-  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
-<% end %>
-<%= render "shared/footer" %>
+<%#= link_to('items/new', class: 'purchase-btn') do %>
+  <%# <span class='purchase-btn-text'>出品する</span> %>
+  <%#= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<%# <% end %>
+<%#= render "shared/footer" %>
+<div class='footer1'>
+  <div class='footer-contents'>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>FURIMAについて</h2>
+      <ul>
+        <li><%= link_to '会社概要（運営会社)', "#", class: "footer-link" %></li>
+        <li><%= link_to 'プライバシーポリシー', "#", class: "footer-link" %></li>
+        <li><%= link_to 'FURIMA利用規約', "#", class: "footer-link" %></li>
+        <li><%= link_to 'ポイントに関する特約', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>FURIMAを見る</h2>
+      <ul>
+        <li><%= link_to 'カテゴリー一覧', "#", class: "footer-link" %></li>
+        <li><%= link_to 'ブランド一覧', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'>connectについて</h2>
+      <ul>
+        <li><%= link_to '商品を購入する', items_path, class: "footer-link" %></li>
+        <li><%= link_to 'チャットを利用する', rooms_path, class: "footer-link" %></li>
+        <li><%= link_to '投稿を利用する', prototypes_path, class: "footer-link" %></li>
+        <li><%= link_to '登録情報を変更する', edit_user_registration_path, class: "footer-link" %></li>
+        
+      </ul>
+    </div>
+  </div>
+  <%= link_to image_tag("clw.png", class:"logo-white"), "#" %>
+  <p>© connect</p>
+</div>

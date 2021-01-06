@@ -16,6 +16,26 @@
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
+.footer-contents1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.ad-footer-contents-ori {
+  width: 100vw;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
 .ad-footer-title {
   font-size: 4vh;
   margin-bottom: 2vh;
@@ -45,19 +65,33 @@
 .furima-details {
   margin: 0 4vw;
 }
+.furima-details1 {
+  margin: 0 4vw;
+}
 
 .footer-content-head {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 3vh;
+}
+.footer-content-head1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+
 .footer-link {
+  color: #FFF;
+  font-size: 2vh;
+    line-height: 3vw;
+}
+.footer-link1 {
   color: #FFF;
   font-size: 12px;
   line-height: 30px;
 }
-
 .logo-white {
   width: 20vh;
   vertical-align: bottom;
