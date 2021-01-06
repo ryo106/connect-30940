@@ -20,7 +20,7 @@
   font-size: 16px;
   color: #FAFAFA;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 5px;
 }
 
 .create-room {
@@ -28,11 +28,12 @@
 }
 
 .create-room a {
-  border: 1px solid lightblue;
-  padding: 14px;
+  border: 2px solid lightblue;
+  padding: 15px;
   color: deepskyblue;
   text-decoration: none;
-  font-size: larger;
+  font-size: 2vh;
+
 }
 
 .rooms {

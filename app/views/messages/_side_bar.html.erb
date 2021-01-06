@@ -10,6 +10,11 @@
 </div>
 
 <div class="rooms">
+  <div class="room">
+    <div class="room-name">
+      <a href="#">[チャットルーム名]</a>
+    </div>
+  </div>
   <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
@@ -17,9 +22,5 @@
       </div>
     </div>
   <% end %>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">↑チャットルーム名</a>
-    </div>
-  </div>
+  
 </div>
