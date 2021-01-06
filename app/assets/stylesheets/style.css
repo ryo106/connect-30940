@@ -30,9 +30,20 @@ li {
 img {
   max-width: 100%;
   vertical-align: bottom;
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
 }
 
+.imgitem {
+  max-width: 50%;
+  vertical-align: bottom;
+  /* margin-bottom: 5vh; */
+}
+
+.imgitem2 {
+  max-width: 50%;
+  vertical-align: bottom;
+  /* margin-bottom: 5vh; */
+}
 a {
   text-decoration: none;
   color: #3b4043;
