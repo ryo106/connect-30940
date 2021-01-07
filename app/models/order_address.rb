@@ -4,7 +4,7 @@ class OrderAddress
 
   with_options presence: true do
     validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/ }
-    validates :prefecture_id, numericality: { other_than: 1 }
+    validates :prefecture_id, numericality: { other_than: 1, other_than: 49 }
     validates :municipality, format: { with: /\A[ぁ-んァ-ン一-龥]/ }
     validates :address
     validates :phone_number, numericality: {}, length: { minimum: 10, maximum: 11, message: 'number is not a number'}
