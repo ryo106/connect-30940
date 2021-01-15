@@ -2,7 +2,6 @@
 
 ## users テーブル
 
-
 | Column               | Type   | Options      |
 | -------------------- | ------ | ------------ |
 | email                | string | null: false  |
@@ -13,12 +12,18 @@
 | first_name_kana      | string | null: false  |
 | last_name_kana       | string | null: false  |
 | birthday             | date   | null: false  |
+| image                | string |              |
+| profile              | text   |              |
+| hobby                | text   |              |
 
 ### Association
 
 - has_many :items
 - has_many :orders
-
+- has_many :room_users
+- has_many :rooms, through: :room_users
+- has_many :messages
+- has_many :prototypes 
 
 
 ## items テーブル
@@ -39,6 +44,7 @@
 
 - has_one :order
 - belongs_to :user 
+- has_one_attached :image
 
 
 ## orders テーブル
@@ -67,13 +73,80 @@
 | phone_number         | string    | null: false                    |
 | order                | reference | null: false, foreign_key: true |
 
-
 ### Association
 
 - belongs_to :order 
 
 
+## messages テーブル
 
+| Column               | Type      | Options                        |
+| -------------------- | --------- | ------------------------------ |
+| content              | string    | null: false                    |
+| room                 | reference | null: false, foreign_key: true |
+| user                 | reference | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+- has_one_attached :image
+
+
+## rooms テーブル
+
+| Column               | Type      | Options                        |
+| -------------------- | --------- | ------------------------------ |
+| name                 | string    | null: false                    |
+
+### Association
+
+- has_many :room_users, dependent: :destroy
+- has_many :users, through: :room_users
+- has_many :messages, dependent: :destroy
+
+
+## rooms_users テーブル
+
+| Column               | Type      | Options                        |
+| -------------------- | --------- | ------------------------------ |
+| room                 | reference | null: false, foreign_key: true |
+| user                 | reference | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
+- belongs_to :user
+
+
+## prototypes テーブル
+
+| Column               | Type      | Options                        |
+| -------------------- | --------- | ------------------------------ |
+| title                | string    | null: false                    |
+| text                 | text      | null: false                    |
+| etc                  | text      | null: false                    |
+| user                 | reference | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_one_attached :image
+- has_many :comments, dependent: :destroy
+
+
+## comments テーブル
+
+| Column               | Type      | Options                        |
+| -------------------- | --------- | ------------------------------ |
+| text                 | string    | null: false                    |
+| prototype            | reference | null: false, foreign_key: true |
+| user                 | reference | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :prototype
 
 
 
