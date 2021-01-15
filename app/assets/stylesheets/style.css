@@ -378,7 +378,7 @@ a {
 }
 .main1{
   background-color: white;
-  width:800px;
+  /* width:800px; */
   margin-right: auto;
   margin-left : auto;
 }
