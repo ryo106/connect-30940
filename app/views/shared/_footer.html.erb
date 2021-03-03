@@ -34,7 +34,7 @@
     <div class='furima-details'>
       <h2 class='footer-content-head'>登録情報について</h2>
       <ul>
-        <li><%= link_to 'プロフィールを確認する', "/users/#{current_user.id}", class: "footer-link" %></li>
+        <li><%= link_to 'プロフィールを確認する', current_user, class: "footer-link" %></li>
         <li><%= link_to 'プロフィールを編集する', edit_user_registration_path, class: "footer-link" %></li>
       </ul>
     </div>
