@@ -32,6 +32,7 @@ class User < ApplicationRecord
     with_options presence: true do
       validates :nickname 
       validates :birthday 
+      validates :image 
 
       with_options format: { with: /\A[ぁ-んァ-ン一-龥々]/ } do
         validates :first_name
