@@ -82,3 +82,4 @@ gem 'fog-aws'
 
 gem 'dotenv-rails'
 
+gem 'rails-i18n'
