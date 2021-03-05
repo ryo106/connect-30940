@@ -25,12 +25,12 @@ class ItemsController < ApplicationController
 
   def edit
     redirect_to root_path unless @item.user_id == current_user.id 
-    # && @item.order.blank?
+    
   end
 
   def update
     if @item.update(item_params)
-      redirect_to root_path
+      redirect_to items_path
     else
       render :edit
     end
@@ -43,7 +43,7 @@ class ItemsController < ApplicationController
     if @item.user_id == current_user.id 
       # && @item.order.blank?
       @item.destroy
-      redirect_to root_path
+      redirect_to items_path
     else
       render :show
     end
