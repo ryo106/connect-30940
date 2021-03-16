@@ -48,7 +48,7 @@ reiko1
 - ページ上段に機能を集約して使いやすさを意識しました
 - 主な機能をアイコン化し、わかりやすさを心がけました
 - 右上に自身のプロフィール写真を表示させることで、よりSNSらしさを意識しました
-- 
+
 ## 新規登録画面
 ![40c225838c635fb7a26738ff9b97367d](https://user-images.githubusercontent.com/73945913/111111682-25c81d80-85a2-11eb-8421-79a1dd489bf2.gif)
 ![5068e0632086d5b1384d8d5828b78e53](https://user-images.githubusercontent.com/73945913/111123074-3bddda00-85b2-11eb-8381-b083fc5c50e7.gif)
