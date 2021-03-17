@@ -272,7 +272,8 @@ reiko1
 - belongs_to :prototype
 
 # データベース設計
-<img width="1314" alt="DB設計（connect-30940）" src="https://user-images.githubusercontent.com/73945913/111404702-95f5b100-8712-11eb-89cd-87502ec331f9.png">
+<img width="1313" alt="データベース設計（connect-30940）" src="https://user-images.githubusercontent.com/73945913/111406827-4ca76080-8716-11eb-992a-dc0b8da865c3.png">
+
 
 
 
