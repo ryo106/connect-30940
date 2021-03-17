@@ -271,6 +271,9 @@ reiko1
 - belongs_to :user
 - belongs_to :prototype
 
+# データベース設計
+<img width="1314" alt="DB設計（connect-30940）" src="https://user-images.githubusercontent.com/73945913/111404702-95f5b100-8712-11eb-89cd-87502ec331f9.png">
+
 
 
 <!-- # README
