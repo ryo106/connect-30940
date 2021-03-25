@@ -9,7 +9,7 @@ connect（コネクト）はアクティブシニア向けの「始めやすい�
 # 本番環境
 https://connect-30940.herokuapp.com/
 
-# ログインID
+# ログインID(BASIC認証)
 - ID:<br>
 test
 - パスワード：<br>
